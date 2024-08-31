@@ -1,4 +1,4 @@
-# Heart-Disease-Data-Visualisation
+# Heart-Disease-Data-Visualization
 
 Note that this is a clean version (no missing values) and it only contains 18 variables (the original dataset has more than 300 variables). HeartDisease is the response variable. And this is a classification problem.
 
