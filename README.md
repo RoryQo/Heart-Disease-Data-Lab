@@ -1,6 +1,6 @@
-# Heart-Disease-Data-Visualization
+# Heart-Disease-Data
 
-Focus on creating useful and aesthetic data visualizations (box plots, paired plots with distributions and scatter points, and 2 dimensional binning  with seaborn and pandas 
+Select the most accurate Naive bayes model for predicting heart disease and explore the data by creating useful and aesthetic data visualizations (box plots, paired plots with distributions and scatter points, and 2 dimensional binning  with seaborn and pandas 
 
 Note that this is a clean version (no missing values) and it only contains 18 variables (the original dataset has more than 300 variables). HeartDisease is the response variable. And this is a classification problem.
 
