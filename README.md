@@ -3,7 +3,7 @@
 Select the most accurate Naive bayes model for predicting heart disease and explore the data by creating  data visualizations (box plots, paired plots with distributions and scatter points, and 2 dimensional binning  with seaborn and pandas)
 
 #### Results
-The multinomial naive Bayes model was the best model; it explained 90% of the variation between having heart disease or not for both the training and test data (indicating there is no overfitting). 
+The multinomial naive Bayes model was the best; it explained 90% of the variation between having heart disease or not for both the training and test data (indicating there is no overfitting). 
  This model contains only the categorical predictors in the data set.  This agrees with the findings in our exploration with visualizations.  We can see little difference between sleep hours for those with heart disease or not from the box plot. While it appears that those with heart disease tend to have a higher BMI, from our boxplots, it doesn't appear to be extreme.  There is a higher proportion of people between the ages 50-74 that make up those that have heart disease. 
 
 
