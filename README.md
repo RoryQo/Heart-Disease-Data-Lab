@@ -1,4 +1,4 @@
-# Heart-Disease-Data
+# Heart-Disease-Data 
 
 Select the most accurate Naive bayes model for predicting heart disease and explore the data by creating  data visualizations (box plots, paired plots with distributions and scatter points, and 2 dimensional binning  with seaborn and pandas)
 
