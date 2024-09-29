@@ -1,31 +1,57 @@
-# Heart-Disease-Data 
+# Project: Heart Disease Prediction Using Naive Bayes
 
-Select the most accurate Naive bayes model for predicting heart disease and explore the data by creating  data visualizations (box plots, paired plots with distributions and scatter points, and 2 dimensional binning  with seaborn and pandas)
+## Table of Contents
+1. [Overview](#overview)
+2. [Results](#results)
+3. [Data](#data)
+4. [Setup](#setup)
+5. [Analysis Steps](#analysis-steps)
+6. [Conclusion](#conclusion)
 
-#### Results
-The multinomial naive Bayes model was the best; it explained 90% of the variation between having heart disease or not for both the training and test data (indicating there is no overfitting). 
-This model contains only the categorical predictors in the data set.  This agrees with the findings in our exploration with visualizations.  We can see little difference between sleep hours for those with heart disease or not from the box plot. While it appears that those with heart disease tend to have a higher BMI, from our boxplots, it doesn't appear to be extreme.  There is a higher proportion of people between the ages 50-74 that make up those that have heart disease. 
+## Overview
+This project focuses on predicting the likelihood of heart disease using various predictors from a cleaned dataset. We explore the data through visualizations and build multiple Naive Bayes models—specifically, Gaussian and Multinomial—to identify which model offers the best predictive accuracy.
 
+## Results
+The Multinomial Naive Bayes model emerged as the most effective, explaining 90% of the variance between individuals with and without heart disease for both the training and test datasets, indicating no overfitting. This model exclusively utilized categorical predictors, aligning with insights gained from exploratory visualizations.
 
-#### Data
-Note that this is a clean version (no missing values) and it only contains 18 variables (the original dataset has more than 300 variables). HeartDisease is the response variable. And this is a classification problem.
+Box plots illustrated minimal differences in sleep hours between those with and without heart disease. Although a higher BMI was observed among individuals with heart disease, the difference was not substantial. Additionally, a significant proportion of heart disease cases occurred among individuals aged 50-74.
 
-The `heart2020` dataset is based on the 2020 annual CDC survey data of 400k adults related to their health status.
-* `HeartDisease:` Respondents that have ever reported having coronary heart disease (CHD) or myocardial infarction (MI)
-* `BMI:` Body Mass Index (BMI)
-* `Smoking:` Have you smoked at least 100 cigarettes in your entire life? [Note: 5 packs = 100 cigarettes]
-* `AlcoholDrinking:` Heavy drinkers (adult men having more than 14 drinks per week and adult women having more than 7 drinks per week)
-* `Stroke:` (Ever told) (you had) a stroke?
-* `PhysicalHealth:` Now thinking about your physical health, which includes physical illness and injury, for how many days during the past 30 days was your physical health not good? (0-30 days)
-* `MentalHealth:` Thinking about your mental health, for how many days during the past 30 days was your mental health not good? (0-30 days)
-* `DiffWalking:` Do you have serious difficulty walking or climbing stairs?
-* `Sex:` Are you male or female?
-* `AgeCategory:` Fourteen-level age category
-* `Race:` Imputed race/ethnicity value
-* `Diabetic:` (Ever told) (you had) diabetes?
-* `PhysicalActivity:` Adults who reported doing physical activity or exercise during the past 30 days other than their regular job
-* `GenHealth:` Would you say that in general your health is...
-* `SleepTime:` On average, how many hours of sleep do you get in a 24-hour period?
-* `Asthma:` (Ever told) (you had) asthma?
-* `KidneyDisease:` Not including kidney stones, bladder infection or incontinence, were you ever told you had kidney disease?
-* `SkinCancer:` (Ever told) (you had) skin cancer?
+## Data
+The dataset used in this analysis is derived from the 2020 CDC survey, encompassing health-related data from approximately 400,000 adults. This cleaned dataset includes 18 variables, with no missing values, and focuses on heart disease as a classification problem.
+
+Key variables include:
+
+- **HeartDisease:** Indicator of coronary heart disease (CHD) or myocardial infarction (MI).
+- **BMI:** Body Mass Index.
+- **Smoking:** Indicates whether the individual has smoked at least 100 cigarettes.
+- **AlcoholDrinking:** Defines heavy drinkers based on weekly alcohol consumption.
+- **Stroke:** Indicates a history of stroke.
+- **PhysicalHealth:** Number of days in the past 30 days that physical health was not good.
+- **MentalHealth:** Number of days in the past 30 days that mental health was not good.
+- **DiffWalking:** Indicates difficulty walking or climbing stairs.
+- **Sex:** Gender of the respondent.
+- **AgeCategory:** Age group of the respondent.
+- **Race:** Imputed race/ethnicity.
+- **Diabetic:** Indicates a history of diabetes.
+- **PhysicalActivity:** Indicates whether the respondent engaged in physical activity in the past 30 days.
+- **GenHealth:** Self-reported general health status.
+- **SleepTime:** Average hours of sleep in a 24-hour period.
+- **Asthma:** Indicates a history of asthma.
+- **KidneyDisease:** Indicates a history of kidney disease.
+- **SkinCancer:** Indicates a history of skin cancer.
+
+## Setup
+To begin, ensure that the necessary libraries are installed and import the cleaned dataset. The data is preprocessed to convert ordinal variables into integers, facilitating the modeling process.
+
+## Analysis Steps
+1. **Data Exploration:** Utilize visualizations such as box plots and scatter plots to understand relationships between variables and the target variable.
+2. **Model Development:**
+   - **Gaussian Naive Bayes:** Create a model using only numerical variables.
+   - **Multinomial Naive Bayes:** Create a model using only categorical variables.
+   - **All Variables:** Create a model that incorporates both categorical and numerical variables.
+3. **Model Evaluation:** Assess the accuracy of each model using training and test datasets to identify the best performer.
+
+## Conclusion
+All models displayed satisfactory accuracy, with the Multinomial Naive Bayes model achieving the highest performance. The Gaussian Naive Bayes model incorporating all variables showed the least accuracy, yet still maintained an over 82% accuracy rate in predicting heart disease.
+
+This analysis provides valuable insights into the factors associated with heart disease, contributing to better understanding and potential prevention strategies.
