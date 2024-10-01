@@ -1,6 +1,6 @@
 # Project: Heart Disease Prediction Using Naive Bayes
 
-## Table of Contents
+## Table of Contents 
 1. [Overview](#overview)
 2. [Results](#results)
 3. [Data](#data)
