@@ -2,7 +2,7 @@
   
 ## Table of Contents 
 1. [Overview](#overview)
-2. [Results](#results)
+2. [Results](#results) 
 3. [Data](#data)
 4. [Setup](#setup)
 5. [Analysis Steps](#analysis-steps)
